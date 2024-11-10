@@ -43,7 +43,7 @@ const Hero = () => {
                     <img 
                         src={heroImg} 
                         alt="Hero image" 
-                        className='w-2/4 h-auto rounded-3xl object-cover mx-auto'
+                        //className='w-2/4 h-auto rounded-3xl object-cover mx-auto'
                          // Adjusted size with rounding
                     />
                 </motion.div>

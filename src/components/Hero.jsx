@@ -17,9 +17,9 @@ const Hero = () => {
                     viewport={{ once: false, amount: 0.7 }}
                     className='md:w-1/2'
                 >
-                    <h1 className='text-2xl font-secondary font-bold mb-4 leading-snug md:w-3/5'>
-                        Welcome to RichFoods Laboratory.
-                    </h1>
+                    <h1 className='text-2xl font-secondary font-bold mb-4 leading-snug md:w-full whitespace-nowrap'>
+    Welcome to RichFoods Laboratory.
+</h1>
                     <p className='text-lg mb-12 md:pr-8'>
                         Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
                         Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.
@@ -40,12 +40,14 @@ const Hero = () => {
                     viewport={{ once: false, amount: 0.7 }}
                     className='md:w-1/2 flex justify-center'
                 >
-                    <img 
-                        src={heroImg} 
-                        alt="Hero image" 
-                        //className='w-2/4 h-auto rounded-3xl object-cover mx-auto'
-                         // Adjusted size with rounding
-                    />
+                  <div className="w-full h-screen relative">
+  <img 
+    src={heroImg} 
+    alt="Hero image" 
+    className='w-full h-full rounded-3xl object-cover absolute top-0 left-0' 
+  />
+</div>
+
                 </motion.div>
             </div>
         </section>

@@ -47,7 +47,7 @@ const Navbar = () => {
 
     const navLinks = (
         <ul className='font-medium flex flex-col md:flex-row lg:space-x-8 sm:space-x-4 space-y-2 md:space-y-0 p-4 md:p-0'>
-            {['home', 'services', 'about', 'pricing', 'testimonial'].map(section => (
+            {['home', 'about','services', 'pricing', 'testimonial'].map(section => (
                 <li key={section}>
                     <motion.a 
                         whileHover={{ scale: 1.1 }}
@@ -76,6 +76,8 @@ const Navbar = () => {
                         <img src="#" alt="Logo" />
                     </a>
                 </div>
+
+                
                 {/* Nav Items */}
                 <div className='hidden md:flex flex-grow justify-center'>
                     <nav>{navLinks}</nav>

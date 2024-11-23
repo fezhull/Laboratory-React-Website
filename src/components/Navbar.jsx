@@ -1,6 +1,8 @@
 import React, { useEffect, useState } from 'react';
 import { HiOutlineMenuAlt3 } from "react-icons/hi";
 import { motion } from "framer-motion";
+import logoImg from "../assets/LOGO.png";
+
 
 const Navbar = () => {
     const [isOpen, setIsOpen] = useState(false);
@@ -72,10 +74,11 @@ const Navbar = () => {
             <div className='container mx-auto flex justify-between items-center h-full'>
                 {/* Logo */}
                 <div>
-                    <a href="/">
-                        <img src="#" alt="Logo" />
-                    </a>
-                </div>
+    <a href="/">
+        <img src={logoImg} alt="Logo" style={{ width: '70px', height: 'auto' }} />
+    </a>
+</div>
+
 
                 
                 {/* Nav Items */}

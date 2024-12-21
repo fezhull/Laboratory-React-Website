@@ -2,6 +2,7 @@ import { FaEnvelope, FaGlobe, FaPhoneAlt, FaUserAlt } from "react-icons/fa";
 import { motion } from "framer-motion";
 import { fadeIn } from "../utilis/animationVariants";
 import React, { useState } from 'react';
+import contactBg from '../assets/imgg.jpg'; // Ensure the path to your image is correct
 
 const Contact = () => {
   const [name, setName] = useState("");
@@ -31,8 +32,19 @@ const Contact = () => {
   };
 
   return (
-    <div className="bg-lightBlue-100 flex items-center justify-center py-28 px-8" id="contact">
-      <div className="container mx-auto">
+    <div
+      className="relative bg-cover bg-center py-28 px-8 flex items-center justify-center"
+      id="contact"
+      style={{
+        backgroundImage: `url(${contactBg})`, // Background image URL
+        backgroundSize: 'cover', // Ensures the image covers the entire background
+        backgroundPosition: 'center', // Keeps the image centered
+      }}
+    >
+      {/* Overlay to darken background slightly (optional) */}
+      <div className="absolute inset-0 bg-black bg-opacity-50"></div>
+
+      <div className="container mx-auto relative z-10">
         <div className="md:w-4/5 mx-auto grid grid-cols-1 md:grid-cols-2 items-center md:gap-12 gap-8">
           {/* Left Side */}
           <motion.div
@@ -42,8 +54,8 @@ const Contact = () => {
             viewport={{ once: false, amount: 0.7 }}
             className="space-y-8"
           >
-            <h2 className="text-4xl font-bold font-secondary mb-4 text-black">Make an Appointment</h2>
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-8 text-black">
+            <h2 className="text-4xl font-bold font-secondary mb-4 text-white">Make an Appointment</h2>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-8 text-white">
               <div className="flex items-start gap-4">
                 <div className="flex items-center justify-center rounded-full bg-white p-3">
                   <FaUserAlt className="text-primary" />

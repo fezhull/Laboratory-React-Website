@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { HiOutlineMenuAlt3 } from 'react-icons/hi';
+import { FaPhoneAlt } from 'react-icons/fa';  // Import the phone icon
 import { motion } from 'framer-motion';
 import logoImg from '../assets/LOGO.png'; // Make sure the logo path is correct
 
@@ -83,17 +84,14 @@ const Navbar = () => {
           <nav>{navLinks}</nav>
         </div>
 
-        {/* Button */}
+        {/* Phone Number with Icon */}
         <div className='hidden md:block'>
           <a
-            onClick={(e) => {
-              e.preventDefault();
-              handleScrollTo('contact');
-            }}
-            href="#contact"
-            className='text-black bg-primary hover:bg-primary/90 px-4 py-2 rounded'
+            href="tel:+1234567890"  // Replace with your phone number
+            className='flex items-center text-black hover:text-primary text-lg font-medium'
           >
-            Contact Us
+            <FaPhoneAlt className='mr-2 text-xl' /> {/* Phone icon */}
+            +1 (234) 567-890  {/* Replace with your phone number */}
           </a>
         </div>
 
@@ -115,15 +113,15 @@ const Navbar = () => {
             {navLinks.props.children}
             <li className='py-2'>
               <a
-                href="#contact"
-                className='text-black bg-primary hover:bg-primary/90 px-4 py-2 rounded'
+                href="tel:+1234567890" // Replace with your phone number
+                className='flex items-center text-black hover:text-primary text-lg font-medium'
                 onClick={(e) => {
                   e.preventDefault();
                   handleClosemenu();
-                  handleScrollTo('contact');
                 }}
               >
-                Contact Us
+                <FaPhoneAlt className='mr-2 text-xl' /> {/* Phone icon */}
+                +1 (234) 567-890  {/* Replace with your phone number */}
               </a>
             </li>
           </ul>

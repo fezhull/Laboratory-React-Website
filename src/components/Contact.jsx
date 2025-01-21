@@ -45,7 +45,7 @@ const Contact = () => {
       <div className="absolute inset-0 bg-black bg-opacity-50"></div>
 
       <div className="container mx-auto relative z-10">
-        <div className="md:w-4/5 mx-auto grid grid-cols-1 md:grid-cols-2 items-center md:gap-12 gap-8">
+        <div className="md:w-4/5 mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 items-start">
           {/* Left Side */}
           <motion.div
             variants={fadeIn('down', 0.2)}
@@ -54,42 +54,48 @@ const Contact = () => {
             viewport={{ once: false, amount: 0.7 }}
             className="space-y-8"
           >
-            <h2 className="text-4xl font-bold font-secondary mb-4 text-white">Make an Appointment</h2>
+            <h2 className="text-4xl font-bold font-secondary mb-4 text-white">Get In Touch</h2>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8 text-white">
               <div className="flex items-start gap-4">
                 <div className="flex items-center justify-center rounded-full bg-white p-3">
                   <FaUserAlt className="text-primary" />
                 </div>
-                <div className="space-y-1">
-                  <h3 className="text-lg font-medium">24 Hours Services</h3>
-                  <p>Lorem ipsum is simply dummy text of the printing.</p>
+                <div className="space-y-2">
+                  <h3 className="text-lg font-medium">Office hours</h3>
+                  <div className="flex flex-col">
+                    <p>Monday-Friday</p>
+                    <p>8:00 am to 5:00 pm</p>
+                  </div>
                 </div>
               </div>
               <div className="flex items-start gap-4">
                 <div className="flex items-center justify-center rounded-full bg-white p-3">
                   <FaEnvelope className="text-primary" />
                 </div>
-                <div className="space-y-1">
-                  <h3 className="text-lg font-medium">Email Support</h3>
-                  <p>Lorem ipsum is simply dummy text of the printing.</p>
+                <div className="space-y-2">
+                  <h3 className="text-lg font-medium">Our Address</h3>
+                  <p>8502 Preston Rd. Ingle,</p>
+                  <p>Main 982230 USA</p>
                 </div>
               </div>
               <div className="flex items-start gap-4">
                 <div className="flex items-center justify-center rounded-full bg-white p-3">
                   <FaPhoneAlt className="text-primary" />
                 </div>
-                <div className="space-y-1">
-                  <h3 className="text-lg font-medium">Phone Assistance</h3>
-                  <p>Lorem ipsum is simply dummy text of the printing.</p>
+                <div className="space-y-2">
+                  <h3 className="text-lg font-medium">Office 2</h3>
+                  <p>8502 Preston Rd. Ingle,</p>
+                  <p>Main 982230 USA</p>
                 </div>
               </div>
               <div className="flex items-start gap-4">
                 <div className="flex items-center justify-center rounded-full bg-white p-3">
                   <FaGlobe className="text-primary" />
                 </div>
-                <div className="space-y-1">
-                  <h3 className="text-lg font-medium">Global Reach</h3>
-                  <p>Lorem ipsum is simply dummy text of the printing.</p>
+                <div className="space-y-2">
+                  <h3 className="text-lg font-medium">Get In Touch</h3>
+                  <p>+1-246-888-0653</p>
+                  <p>+1-246-888-0653</p>
                 </div>
               </div>
             </div>
@@ -101,11 +107,11 @@ const Contact = () => {
             initial="hidden"
             whileInView="show"
             viewport={{ once: false, amount: 0.7 }}
-            className="space-y-8 p-8 bg-white shadow-xl rounded-md"
+            className="space-y-8 p-8 bg-white shadow-xl rounded-md max-w-lg mx-auto"
           >
             <h3 className="text-2xl font-bold mb-4 text-black">Book Appointment</h3>
             <form onSubmit={handleSubmit} className="space-y-8">
-              <div className="flex sm:flex-row flex-col gap-4">
+              <div className="flex flex-col gap-6 md:flex-row md:gap-8">
                 <input
                   onChange={(e) => setName(e.target.value)}
                   type="text"
@@ -119,7 +125,7 @@ const Contact = () => {
                   className="w-full p-4 rounded-md focus:outline-none focus:ring-2 focus:ring-primary shadow"
                 />
               </div>
-              <div className="flex sm:flex-row flex-col gap-4">
+              <div className="flex flex-col gap-6 md:flex-row md:gap-8">
                 <input
                   onChange={(e) => setPhone(e.target.value)}
                   type="tel"
@@ -149,9 +155,11 @@ const Contact = () => {
           </motion.div>
         </div>
       </div>
+
+      {/* Modal Popup */}
       {showModel && (
         <div className="fixed inset-0 flex items-center justify-center bg-black bg-opacity-90">
-          <div className="bg-white p-8 rounded-md shadow-lg">
+          <div className="bg-white p-8 rounded-md shadow-lg max-w-md w-full">
             <h2 className="text-2xl font-bold mb-4">Thank You!</h2>
             <p>Thank you, {name}, for submitting your query.</p>
             <button

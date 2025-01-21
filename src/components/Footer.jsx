@@ -3,7 +3,7 @@ import footerLogo from "../assets/footer.jpg"
 import { FaEnvelope, FaFacebookF, FaInstagram, FaLinkedin, FaMapMarkedAlt, FaPhoneAlt, FaTwitter } from 'react-icons/fa'
 import { motion } from "framer-motion"
 import { fadeIn } from "../utilis/animationVariants"
-import logoImg from "../assets/LOGO.png";
+import logoImg from "../assets/logo/1.png";
 
 const Footer = () => {
   return (
@@ -97,15 +97,15 @@ const Footer = () => {
                 <ul className='space-y-2'>
                     <li className='flex items-center gap-2'>
                         <FaMapMarkedAlt className='text-primary'/>
-                        <p className='text-gray-700 text-sm'>123 Street, City, Country</p>
+                        <p className='text-gray-700 text-sm'>Enterprise road, off Road 'A'</p>
                     </li> 
                     <li className='flex items-center gap-2'>
                         <FaPhoneAlt className='text-primary'/>
-                        <p className='text-gray-700 text-sm'>+123 456 7890</p>
+                        <p className='text-gray-700 text-sm'>+254 728 270 175</p>
                     </li> 
                     <li className='flex items-center gap-2'>
                         <FaEnvelope className='text-primary'/>
-                        <p className='text-gray-700 text-sm'>info@richfoodsltd.com</p>
+                        <p className='text-gray-700 text-sm'>richfoodsltd.ke@gmail.com</p>
                     </li>  
                 </ul>
             </motion.div>

@@ -25,13 +25,13 @@ const Testimonial = () => {
     <div className="bg-[#f7f8fc] py-12" id="testimonial">
       <div className="container mx-auto">
         <motion.div
-          variants={fadeIn('up', 0.2)}
+          variants={fadeIn('up', 0.1)}
           initial="hidden"
           whileInView="show"
           viewport={{ once: false, amount: 0.7 }}
           className="text-center mb-12"
         >
-          <h2 className="text-4xl font-bold text-primary mb-3">What Our Clients Say</h2>
+          <h2 className="text-4xl font-bold text-black mb-3">What Our Clients Say</h2>
           <p className="text-lg mb-12 md:w-1/2 mx-auto text-gray-600">
             Hear from some of our satisfied clients about how our services have positively impacted their lives and well-being.
           </p>

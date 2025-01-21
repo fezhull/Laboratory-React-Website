@@ -21,9 +21,9 @@ const Services = () => {
       >
         <div className="text-center mb-20">
           <h2 className="text-4xl font-bold text-black mb-4">Services We Offer</h2>
-          <p className="text-lg md:w-3/5 w-full mx-auto text-black opacity-90">
+          {/* <p className="text-lg md:w-3/5 w-full mx-auto text-black opacity-90">
             We provide top-quality testing services to help ensure the safety and quality of food, water, feed, and more.
-          </p>
+          </p> */}
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">

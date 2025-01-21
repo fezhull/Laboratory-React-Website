@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import thumnailImg from '../assets/img1.jpg';
+import thumnailImg from '../assets/images 2.png';
 import { IoPlay } from "react-icons/io5";
 import { IoArrowForwardCircle } from "react-icons/io5";
 import { motion } from "framer-motion";

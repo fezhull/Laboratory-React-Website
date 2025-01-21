@@ -68,34 +68,25 @@ const Contact = () => {
                   </div>
                 </div>
               </div>
-              <div className="flex items-start gap-4">
-                <div className="flex items-center justify-center rounded-full bg-white p-3">
-                  <FaEnvelope className="text-primary" />
-                </div>
-                <div className="space-y-2">
-                  <h3 className="text-lg font-medium">Our Address</h3>
-                  <p>8502 Preston Rd. Ingle,</p>
-                  <p>Main 982230 USA</p>
-                </div>
-              </div>
+             
               <div className="flex items-start gap-4">
                 <div className="flex items-center justify-center rounded-full bg-white p-3">
                   <FaPhoneAlt className="text-primary" />
                 </div>
                 <div className="space-y-2">
                   <h3 className="text-lg font-medium">Office 2</h3>
-                  <p>8502 Preston Rd. Ingle,</p>
-                  <p>Main 982230 USA</p>
+                  <p>Office Hours</p>
+                  <p>Monday to Friday 8.00 AM to 5.00 PM</p>
                 </div>
               </div>
               <div className="flex items-start gap-4">
                 <div className="flex items-center justify-center rounded-full bg-white p-3">
-                  <FaGlobe className="text-primary" />
+                  <FaEnvelope className="text-primary" />
                 </div>
                 <div className="space-y-2">
-                  <h3 className="text-lg font-medium">Get In Touch</h3>
-                  <p>+1-246-888-0653</p>
-                  <p>+1-246-888-0653</p>
+                  <h3 className="text-lg font-medium">Our Address</h3>
+                  <p>P.O BOX 171 00507</p>
+                  <p>Enterprise road Viwandani,Nairobi,Kenya</p>
                 </div>
               </div>
             </div>

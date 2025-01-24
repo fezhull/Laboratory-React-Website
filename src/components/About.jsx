@@ -17,7 +17,7 @@ const About = () => {
   };
 
   return (
-    <div id="about" className="bg-[#f7f8fc] pb-16 pt-20">
+    <div id="who we are" className="bg-[#f7f8fc] pb-16 pt-20">
       <motion.div
         variants={fadeIn('down', 0.2)}
         initial="hidden"

@@ -70,14 +70,8 @@ const Contact = () => {
               </div>
              
               <div className="flex items-start gap-4">
-                <div className="flex items-center justify-center rounded-full bg-white p-3">
-                  <FaPhoneAlt className="text-primary" />
-                </div>
-                <div className="space-y-2">
-                  <h3 className="text-lg font-medium">Office 2</h3>
-                  <p>Office Hours</p>
-                  <p>Monday to Friday 8.00 AM to 5.00 PM</p>
-                </div>
+                
+               
               </div>
               <div className="flex items-start gap-4">
                 <div className="flex items-center justify-center rounded-full bg-white p-3">
@@ -86,7 +80,7 @@ const Contact = () => {
                 <div className="space-y-2">
                   <h3 className="text-lg font-medium">Our Address</h3>
                   <p>P.O BOX 171 00507</p>
-                  <p>Enterprise road Viwandani,Nairobi,Kenya</p>
+                  <p>Enterprise road Viwandani, Nairobi, Kenya</p>
                 </div>
               </div>
             </div>

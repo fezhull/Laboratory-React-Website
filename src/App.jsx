@@ -12,7 +12,7 @@ function App() {
     <div className='font-primary overflow-hidden'>
       <Navbar />
       <Hero id="home" />
-      <About id="about" />
+      <About id="who we are" />
       <Services id="What we do" />
       <Testimonial id="testimonial" />
       <Contact id="contact" />

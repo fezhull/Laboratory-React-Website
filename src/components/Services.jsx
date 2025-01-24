@@ -10,7 +10,7 @@ import agricultureImg from '../assets/agriculture-testing.jpg';
 
 const Services = () => {
   return (
-    <div id="services" className="relative bg-cover bg-center py-16 bg-gradient-to-b from-green-200 to-green-500">
+    <div id="What we do" className="relative bg-cover bg-center py-16 bg-gradient-to-b from-green-200 to-green-500">
       <div className="absolute inset-0 bg-heroBgS bg-opacity-50"></div>
       <motion.div
         variants={fadeIn('down', 0.2)}

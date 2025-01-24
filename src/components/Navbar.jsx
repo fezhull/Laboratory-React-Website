@@ -12,7 +12,7 @@ const Navbar = () => {
   const handleClosemenu = () => setIsOpen(false);
 
   const handleScroll = () => {
-    const sections = ['home', 'about', 'services', 'testimonial', 'contact'];
+    const sections = ['home', 'about', 'What we do', 'testimonial', 'contact'];
     const scrollPosition = window.scrollY + 100;
 
     sections.forEach((section) => {
@@ -44,7 +44,7 @@ const Navbar = () => {
 
   const navLinks = (
     <ul className='font-medium flex flex-col md:flex-row lg:space-x-8 sm:space-x-4 space-y-2 md:space-y-0 p-4 md:p-0'>
-      {['home', 'about', 'services', 'testimonial', 'contact'].map((section) => (
+      {['home', 'about', 'What we do', 'testimonial', 'contact'].map((section) => (
         <li key={section}>
           <motion.a
             whileHover={{ scale: 1.1 }}

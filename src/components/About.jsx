@@ -48,7 +48,7 @@ const About = () => {
           {/* Right Side - Text and Button */}
           <div className="md:w-1/2 w-full">
             <h2 className="text-2xl md:text-3xl font-secondary font-bold mb-4 leading-snug">
-              About Us
+              Who we are
             </h2>
             <p className="text-lg mb-12 md:pr-8">
               Rich Foods Laboratory Ltd is an independent analytical testing laboratory dedicated to providing a broad range of high-quality laboratory testing services & consultancy support to our clients in the food, feed, water, environment & agricultural industries.

@@ -13,7 +13,7 @@ function App() {
       <Navbar />
       <Hero id="home" />
       <About id="about" />
-      <Services id="services" />
+      <Services id="What we do" />
       <Testimonial id="testimonial" />
       <Contact id="contact" />
       <Footer />

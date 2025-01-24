@@ -15,7 +15,7 @@ function App() {
       <About id="about" />
       <Services id="services" />
       <Testimonial id="testimonial" />
-      <Contact />
+      <Contact id="contact" />
       <Footer />
     </div>
   );

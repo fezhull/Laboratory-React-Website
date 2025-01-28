@@ -93,7 +93,7 @@ const Navbar = () => {
         </div>
 
         {/* Hamburger Menu (Mobile) */}
-        <div className='block md:hidden absolute top-0 right-4'> {/* Positioned at the top-right corner */}
+        <div className='block md:hidden absolute top-3 right-4'> {/* Adjusted top to 3 */}
           <button onClick={handletoggle} className={`text-black focus:outline-none ${isOpen ? 'border border-black' : ''}`}>
             <HiOutlineMenuAlt3 className='text-3xl' />
           </button>

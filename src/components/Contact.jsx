@@ -1,6 +1,4 @@
 import { FaEnvelope, FaGlobe, FaPhoneAlt, FaUserAlt } from "react-icons/fa";
-import { motion } from "framer-motion";
-import { fadeIn } from "../utilis/animationVariants";
 import React, { useState } from 'react';
 import contactBg from '../assets/imgg.jpg'; // Ensure the path to your image is correct
 
@@ -47,13 +45,7 @@ const Contact = () => {
       <div className="container mx-auto relative z-10">
         <div className="md:w-4/5 mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 items-start">
           {/* Left Side */}
-          <motion.div
-            variants={fadeIn('down', 0.2)}
-            initial="hidden"
-            whileInView="show"
-            viewport={{ once: false, amount: 0.7 }}
-            className="space-y-8"
-          >
+          <div className="space-y-8">
             <h2 className="text-4xl font-bold font-secondary mb-4 text-white">Get In Touch</h2>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8 text-white">
               <div className="flex items-start gap-4">
@@ -68,11 +60,6 @@ const Contact = () => {
                   </div>
                 </div>
               </div>
-             
-              <div className="flex items-start gap-4">
-                
-               
-              </div>
               <div className="flex items-start gap-4">
                 <div className="flex items-center justify-center rounded-full bg-white p-3">
                   <FaEnvelope className="text-primary" />
@@ -84,16 +71,10 @@ const Contact = () => {
                 </div>
               </div>
             </div>
-          </motion.div>
+          </div>
 
           {/* Right Side */}
-          <motion.div
-            variants={fadeIn('left', 0.2)}
-            initial="hidden"
-            whileInView="show"
-            viewport={{ once: false, amount: 0.7 }}
-            className="space-y-8 p-8 bg-white shadow-xl rounded-md max-w-lg mx-auto"
-          >
+          <div className="space-y-8 p-8 bg-white shadow-xl rounded-md max-w-lg mx-auto">
             <h3 className="text-2xl font-bold mb-4 text-black">Book Appointment</h3>
             <form onSubmit={handleSubmit} className="space-y-8">
               <div className="flex flex-col gap-6 md:flex-row md:gap-8">
@@ -137,7 +118,7 @@ const Contact = () => {
                 Send Message
               </button>
             </form>
-          </motion.div>
+          </div>
         </div>
       </div>
 

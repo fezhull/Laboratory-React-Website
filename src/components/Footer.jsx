@@ -3,7 +3,7 @@ import footerLogo from "../assets/footer.jpg"
 import { FaEnvelope, FaFacebookF, FaInstagram, FaLinkedin, FaMapMarkedAlt, FaPhoneAlt, FaTwitter } from 'react-icons/fa'
 import { motion } from "framer-motion"
 import { fadeIn } from "../utilis/animationVariants"
-import logoImg from "../assets/logo/1.png";
+import logoImg from "../assets/logo/Picture1.png";
 
 const Footer = () => {
   return (

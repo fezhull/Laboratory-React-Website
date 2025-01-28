@@ -65,10 +65,10 @@ const Navbar = () => {
   );
 
   return (
-    <header className='bg-white text-black py-3 px-4 fixed top-0 left-0 right-0 z-50'> {/* Reduced padding to make navbar slimmer */}
-      <div className='flex items-center justify-start h-full'> {/* Flex container with justify-start */}
+    <header className='bg-white text-black py-3 px-4 fixed top-0 left-0 right-0 z-50'>
+      <div className='flex items-center justify-between h-full'> {/* Flex container with justify-between */}
         {/* Image Logo */}
-        <div className="ml-4"> {/* Remove margin-left to make sure it's at the start */}
+        <div className="ml-0"> {/* Remove margin-left to make sure it's at the start */}
           <a href="#home">
             <img
               src={logoImage} // Using image logo here
@@ -92,13 +92,15 @@ const Navbar = () => {
           </a>
         </div>
 
-        <div className='block md:hidden'>
+        {/* Hamburger Menu (Mobile) */}
+        <div className='block md:hidden absolute top-0 right-4'> {/* Positioned at the top-right corner */}
           <button onClick={handletoggle} className={`text-black focus:outline-none ${isOpen ? 'border border-black' : ''}`}>
             <HiOutlineMenuAlt3 className='text-3xl' />
           </button>
         </div>
       </div>
 
+      {/* Mobile Navigation Menu */}
       {isOpen && (
         <nav className='absolute top-full left-0 w-full bg-white z-20 md:hidden'>
           <ul className='flex flex-col p-4 space-y-3'>

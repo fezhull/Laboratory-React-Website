@@ -12,13 +12,13 @@ const Services = () => {
   return (
     <div id="What we do" className="relative bg-cover bg-center py-16 bg-gradient-to-b from-green-200 to-green-500">
       <div className="absolute inset-0 bg-heroBgS bg-opacity-50"></div>
-      <motion.div
+      {/* <motion.div
         variants={fadeIn('down', 0.2)}
         initial="hidden"
         whileInView="show"
         viewport={{ once: false, amount: 0.5 }}
         className="relative container mx-auto px-4 py-20"
-      >
+      > */}
         <div className="text-center mb-20">
           <h2 className="text-4xl font-bold text-black mb-4">Services We Offer</h2>
           {/* <p className="text-lg md:w-3/5 w-full mx-auto text-black opacity-90">
@@ -71,7 +71,7 @@ const Services = () => {
             </p>
           </div>
         </div>
-      </motion.div>
+      {/* </motion.div> */}
     </div>
   );
 };

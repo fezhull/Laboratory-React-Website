@@ -18,13 +18,13 @@ const About = () => {
 
   return (
     <div id="who we are" className="bg-[#f7f8fc] pb-16 pt-20">
-      <motion.div
+      {/* <motion.div
         variants={fadeIn('down', 0.2)}
         initial="hidden"
         whileInView="show"
         viewport={{ once: false, amount: 0.7 }}
         className="container mx-auto px-4"
-      >
+      > */}
         <div className="py-12 flex flex-col md:flex-row items-center gap-8">
           {/* Left Side - Thumbnail and Video */}
           <div className="md:w-1/2 w-full mb-8 md:mb-0">
@@ -83,7 +83,7 @@ const About = () => {
             </button>
           </div>
         )}
-      </motion.div>
+      {/* </motion.div> */}
     </div>
   );
 };

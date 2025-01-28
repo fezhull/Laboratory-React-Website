@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { HiOutlineMenuAlt3 } from 'react-icons/hi';
 import { FaPhoneAlt } from 'react-icons/fa';
 import { motion } from 'framer-motion';
-import logoVideo from '../assets/logo/Logo.mp4'; // Import the video logo
+import logoImage from '../assets/logo/Picture1.png'; // Import the image logo
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -65,24 +65,20 @@ const Navbar = () => {
   );
 
   return (
-    <header className='bg-white text-black py-6 px-4 fixed top-0 left-0 right-0 z-50'>
-      <div className='container mx-auto flex justify-between items-center h-full'>
-        {/* Video Logo */}
-        <div>
+    <header className='bg-white text-black py-3 px-4 fixed top-0 left-0 right-0 z-50'> {/* Reduced padding to make navbar slimmer */}
+      <div className='flex items-center justify-start h-full'> {/* Flex container with justify-start */}
+        {/* Image Logo */}
+        <div className="ml-4"> {/* Remove margin-left to make sure it's at the start */}
           <a href="#home">
-            <video
-              autoPlay
-              loop
-              muted
+            <img
+              src={logoImage} // Using image logo here
+              alt="Logo"
               style={{
-                width: '250px', // Smaller width
-                height: '120px', // Bigger height
-                objectFit: 'cover', // Ensures the video maintains its aspect ratio without distortion
+                maxWidth: '180px', // Reduced max width of the logo for a more compact size
+                height: 'auto', // Height adjusts proportionally
+                objectFit: 'contain', // Ensures the logo maintains its aspect ratio
               }}
-            >
-              <source src={logoVideo} type="video/mp4" />
-              Sorry, your browser does not support the video tag.
-            </video>
+            />
           </a>
         </div>
 

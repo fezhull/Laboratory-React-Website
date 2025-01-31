@@ -30,7 +30,7 @@ const Hero = () => {
         <div className="flex flex-col lg:flex-row lg:items-center lg:max-h-[900px] lg:min-h-[900px]">
           {/* Left side content */}
           <motion.div 
-            className="flex flex-col items-center justify-center w-full lg:w-6/12 px-4 pt-24 pb-16 sm:px-6 lg:px-24 2xl:px-32 lg:pt-40 lg:pb-14"
+            className="flex flex-col items-center justify-cente r w-full lg:w-6/12 px-4 pt-24 pb-16 sm:px-6 lg:px-24 2xl:px-32 lg:pt-40 lg:pb-14"
             initial={{ opacity: 0, y: 100 }}  // Start further below
             animate={{ opacity: 1, y: 0 }}    // Animate to the final position
             transition={{ duration: 1 }}       // Smooth 1-second transition
@@ -45,7 +45,7 @@ const Hero = () => {
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ duration: 1 }}
                 >
-                  Rich Foods<br />Laboratories Ltd
+                  Rich Foods<br />Laboratories Ltd.
                 </motion.h1>
                 <p className="mt-6 text-base text-black sm:text-xl">If you are looking for food laboratory analysis, we got you covered. We offer a wide variety of analytical testing services, making us a one stop shop for all of your testing needs.</p>
                 <a href="#about" title="" className="inline-flex items-center px-6 py-5 text-base font-semibold text-black transition-all duration-200 bg-green-300 mt-9 hover:bg-green-400 focus:bg-green-400" role="button"> Get started for free </a>

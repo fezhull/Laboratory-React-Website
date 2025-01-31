@@ -88,7 +88,7 @@ const Navbar = () => {
 
         <div className='hidden md:block'>
           <a href="tel:+254728175270" className='flex items-center text-black hover:text-primary text-lg font-medium'>
-            <FaPhoneAlt className='mr-2 text-xl' /> +254 (728) 175-270
+            <FaPhoneAlt className='mr-2 text-xl' /> +254 (728) 270-175
           </a>
         </div>
 
@@ -107,7 +107,7 @@ const Navbar = () => {
             {navLinks.props.children}
             <li className='py-2'>
               <a href="tel:+254728175270" className='flex items-center text-black hover:bg-primary text-lg font-medium' onClick={(e) => { e.preventDefault(); handleClosemenu(); }}>
-                <FaPhoneAlt className='mr-2 text-xl' /> +254 (728) 175-270
+                <FaPhoneAlt className='mr-2 text-xl' /> +254 (728) 270-175
               </a>
             </li>
           </ul>
